@@ -1,7 +1,7 @@
 import {createMaterialTopTabNavigator} from "@react-navigation/material-top-tabs";
 
 import React from "react";
-import {TouchableOpacity, View} from "react-native";
+import {TouchableOpacity, View, ViewBase} from "react-native";
 import {useSafeAreaInsets} from "react-native-safe-area-context";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import {HomeHeader} from "../components/NavigationHeader/HomeHeader";
@@ -98,7 +98,7 @@ function MyTabBar({state, descriptors, navigation, position}) {
           };
 
           return (
-            <>
+            <View style={{ height: insets.top * 1.3, flex:1}} key={index}>
               <TouchableOpacity
                 accessibilityRole="button"
                 accessibilityState={isFocused ? {selected: true} : {}}
@@ -127,7 +127,7 @@ function MyTabBar({state, descriptors, navigation, position}) {
                   )}
                 </View>
               </TouchableOpacity>
-            </>
+            </View>
           );
         })}
       </View>
