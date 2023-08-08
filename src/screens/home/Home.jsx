@@ -1,6 +1,7 @@
 import React from "react";
-import {Text, View} from "react-native";
-import {Header} from "../../components/Home/Header";
+import {View} from "react-native";
+
+import {Header, States} from "../../components";
 const Home = () => {
   return (
     <View
@@ -12,7 +13,7 @@ const Home = () => {
       }}
     >
       <Header />
-      <Text>Home sassa</Text>
+      <States />
     </View>
   );
 };
