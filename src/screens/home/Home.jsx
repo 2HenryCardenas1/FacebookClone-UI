@@ -1,10 +1,11 @@
 import React from "react";
-import {View} from "react-native";
 
+import {ScrollView} from "react-native";
 import {Header, States} from "../../components";
+import {Publication} from "../../components/Publication";
 const Home = () => {
   return (
-    <View
+    <ScrollView
       style={{
         flex: 1,
         backgroundColor: "white",
@@ -14,7 +15,10 @@ const Home = () => {
     >
       <Header />
       <States />
-    </View>
+
+      <Publication />
+      <Publication />
+    </ScrollView>
   );
 };
 
