@@ -4,11 +4,11 @@ import {Text, View} from "react-native";
 
 const HeaderPublication = () => {
   return (
-    <View style={{flexDirection: "row", marginBottom: 5}}>
+    <View style={{flexDirection: "row", marginBottom: 5, marginTop: 15}}>
       <Avatar
         source={require("../../assets/images/imageProfile.jpg")}
         size={"medium"}
-        avatarStyle={{width: "100%", height: "100%",borderRadius: 5,}}
+        avatarStyle={{width: "100%", height: "100%", borderRadius: 5}}
         containerStyle={{
           borderColor: "#E5E5E5",
           borderWidth: 1,
