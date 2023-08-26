@@ -3,15 +3,17 @@ import {View} from "react-native";
 import {ContentPublication} from "./ContentPublication";
 import {DetailsPublication} from "./DetailsPublication";
 import {HeaderPublication} from "./HeaderPublication";
+import {Reactions} from "./Reactions";
 
 const Publication = () => {
   return (
     <View
-      style={{borderTopColor: "#dddddd", borderTopWidth: 1, marginBottom: 5}}
+      style={{borderTopColor: "#dddddd", borderTopWidth: 1, marginBottom: 15}}
     >
       <HeaderPublication />
       <DetailsPublication />
       <ContentPublication />
+      <Reactions />
     </View>
   );
 };
