@@ -1,6 +1,6 @@
-import {Avatar, Icon, Input} from "@rneui/themed";
+import { Avatar, Icon, Input } from "@rneui/themed";
 import React from "react";
-import {View} from "react-native";
+import { View } from "react-native";
 
 const Header = () => {
   return (
@@ -9,7 +9,6 @@ const Header = () => {
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-
         paddingVertical: 5,
       }}
     >
@@ -57,4 +56,4 @@ const Header = () => {
   );
 };
 
-export {Header};
+export { Header };

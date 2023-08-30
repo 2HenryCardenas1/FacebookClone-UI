@@ -17,6 +17,7 @@ const Home = () => {
       <States />
 
       <Publication />
+      <Publication />
 
     </ScrollView>
   );
