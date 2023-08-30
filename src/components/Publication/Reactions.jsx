@@ -1,13 +1,11 @@
-import {Divider, Icon} from "@rneui/themed";
+import { Divider, Icon } from "@rneui/themed";
 import React from "react";
-import {Text, View} from "react-native";
+import { Text, View } from "react-native";
 
 function Reactions() {
   return (
     <View
       style={{
-        borderColor: "red",
-        borderWidth: 2,
         marginBottom: 5,
       }}
     >
@@ -18,6 +16,7 @@ function Reactions() {
           justifyContent: "space-between",
           alignItems: "center",
           paddingVertical: 5,
+
         }}
       >
         <View
@@ -43,29 +42,31 @@ function Reactions() {
             gap: 10,
           }}
         >
-          <Text style={{color: "gray"}}>10 comments •</Text>
-          <Text style={{color: "gray"}}>15 shared •</Text>
-          <Text style={{color: "gray"}}>100 viwers</Text>
+          <Text style={{ color: "gray" }}>10 comments •</Text>
+          <Text style={{ color: "gray" }}>15 shared •</Text>
+          <Text style={{ color: "gray" }}>100 viwers</Text>
         </View>
       </View>
 
-      <Divider style={{marginVertical: 5}} />
+      <Divider style={{ marginVertical: 5 }} />
 
-      <View style={{paddingVertical: 5}}>
+      <View style={{ paddingVertical: 5, flexDirection: 'row', justifyContent: 'space-around' }}>
         <IconsRactions name="thumbs-up" title="Like" />
         <IconsRactions name="comment-alt" title="Comment" />
+        <IconsRactions name="paper-plane" title="Send" />
+        <IconsRactions name="share" title="Share" />
       </View>
     </View>
   );
 }
 
-const IconsRactions = ({name, title}) => {
+const IconsRactions = ({ name, title }) => {
   return (
-    <View style={{flexDirection: "row", gap: 5, alignItems: "center"}}>
+    <View style={{ flexDirection: "row", gap: 5, alignItems: "center" }}>
       <Icon name={name} size={18} type="font-awesome-5" color={"gray"} />
-      <Text style={{color: "gray"}}>{title}</Text>
+      <Text style={{ color: "gray" }}>{title}</Text>
     </View>
   );
 };
 
-export {Reactions};
+export { Reactions };
