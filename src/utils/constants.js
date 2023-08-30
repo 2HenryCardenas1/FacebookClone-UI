@@ -1,5 +1,6 @@
 const HomeScreen = "Home";
+const VideoScreen = "Video";
 
 
 
-export { HomeScreen };
+export { HomeScreen, VideoScreen };
