@@ -1,2 +1,2 @@
-export * from './home/Home.jsx'
-export * from './Video/Video.jsx'
+export * from "./home/Home.jsx";
+export * from "./video/Video.jsx";
