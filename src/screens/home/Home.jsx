@@ -5,18 +5,13 @@ import { Header, States } from "../../components";
 import { Publication } from "../../components/Publication";
 import { STYLE_SCROLL_VIEW_SCREEN } from "../../utils/constants";
 const Home = () => {
-
-
   return (
-    <ScrollView
-      style={STYLE_SCROLL_VIEW_SCREEN}
-    >
+    <ScrollView style={STYLE_SCROLL_VIEW_SCREEN}>
       <Header />
       <States />
 
       <Publication />
       <Publication />
-
     </ScrollView>
   );
 };

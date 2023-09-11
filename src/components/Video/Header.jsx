@@ -32,7 +32,7 @@ const HEADER_OPTIONS = [
 
 function HeaderVideo() {
   return (
-    <View style={{ marginHorizontal: 10 }}>
+    <View style={{ marginHorizontal: 10, marginBottom: 20 }}>
       <View
         style={{
           flexDirection: "row",
